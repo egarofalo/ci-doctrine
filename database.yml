@@ -1,0 +1,28 @@
+active_group: development
+
+development:
+    dbname: doctrine
+    user: root
+    password:
+    host: localhost
+    driver: mysqli
+    charset: utf8
+    debug: true
+    
+testing:
+    dbname: doctrine
+    user: root
+    password: root
+    host: localhost
+    driver: mysqli
+    charset: utf8
+    debug: true
+    
+production:
+    dbname: doctrine
+    user: root
+    password: root
+    host: localhost
+    driver: mysqli
+    charset: utf8
+    debug: false      
