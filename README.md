@@ -5,7 +5,10 @@ Librería de CodeIgniter 3 para utilizar Doctrine como ORM.
 Doctrigniter necesita PHP >= 7.0.8 y CodeIgniter 3.x para poder ser ejecutado.
 
 # Instalación
-Instale Composer en su equipo y luego ejecute el comando <code>composer require co-developers/doctrigniter</code> dentro de la raíz de su proyecto en CodeIgniter. Luego siga los pasos de las secciones <strong>El archivo <code>database.yml</code>, <strong>Carga automática de la librería</strong> y <strong>Creando entidades y repositorios</strong>.
+Instale Composer en su equipo y luego ejecute el comando <code>composer require co-developers/doctrigniter</code> dentro de la raíz de su proyecto en CodeIgniter. Luego siga los pasos de las siguientes secciones respetando el orden:
+- <strong>El archivo <code>database.yml</code>
+- <strong>Carga automática de la librería</strong>
+- <strong>Creando entidades y repositorios</strong>.
 
 # El archivo <code>database.yml</code>
 El archivo <code>application/libraries/doctrigniter/database.yml</code> contiene la configuración de la conexión a la base de datos que utiliza Doctrine para acceder a la misma. Antes de comenzar a utilizar Doctrigniter debe copiar éste archivo en la carpeta <code>application/config</code>.
