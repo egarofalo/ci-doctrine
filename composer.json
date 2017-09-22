@@ -27,9 +27,5 @@
             "Repository\\": "application/ORM/Repository/",
             "CoDevelopers\\Doctrigniter\\": "application/libraries/doctrigniter/"
         }
-    },
-    "scripts": {
-        "pre-package-install": "CoDevelopers\\Doctrigniter\\ComposerSetup::prePackageInstall",
-        "post-package-install": "CoDevelopers\\Doctrigniter\\ComposerSetup::postPackageInstall"
-    }    
+    }   
 }
