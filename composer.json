@@ -16,7 +16,7 @@
         "CodeIgniter", "CodeIgniter 3", "Doctrine", "ORM"
     ],    
     "require": {
-        "php": ">=5.5.9|>=7.0.8",
+        "php": ">=7.0.8",
         "composer/installers": "^1.0",
         "doctrine/orm": "^2.5",
         "symfony/yaml": "^3.3.9"
@@ -24,12 +24,7 @@
     "autoload": {
         "psr-4": {
             "Entity\\": "/../../ORM/Entity",
-            "Repository\\": "/../../ORM/Repository",
-            "CoDevelopers\\Doctrigniter\\": "/"
+            "Repository\\": "/../../ORM/Repository"
         }
-    },
-    "scripts": {
-        "pre-package-install": "CoDevelopers\\Doctrigniter\\ComposerSetup::prePackageInstall",
-        "post-package-install": "CoDevelopers\\Doctrigniter\\ComposerSetup::postPackageInstall"
-    }    
+    }  
 }
