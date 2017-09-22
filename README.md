@@ -21,8 +21,7 @@ Para cargar la librería automaticamente, abra el archivo <code>application/conf
 Antes de comenzar a crear entidades se deben crear las siguientes carpetas:
 - <code>application/ORM/Entity</code>: En esta carpeta se crean las entidades.
 - <code>application/ORM/Repository</code>: En esta carpeta se generan los repositorios de cada entidad.
-- <code>application/ORM/Proxy</code>: En esta carpeta se generan las clases Proxy de cada entidad.<br>
-Una vez que se generaron dichas carpetas, se puede comenzar a crear las entidades y los repositorios de forma manual. La clases Proxy se generan de forma automática por carga diferida (Lazy Loading).
+- <code>application/ORM/Proxy</code>: En esta carpeta se generan las clases Proxy de cada entidad.<p>Una vez que se generaron dichas carpetas, se puede comenzar a crear las entidades y los repositorios de forma manual. La clases Proxy se generan de forma automática por carga diferida (Lazy Loading).</p>
 
 # Metadatos de las entidades
 Doctrigniter utiliza anotaciones para especificar los metadatos de las entidad, ya que es la forma recomendada actualmente por Symfony. Por lo tanto ingrese los metadatos en los archivos de las entidades a través de las anotaciones.
