@@ -23,9 +23,9 @@
     },
     "autoload": {
         "psr-4": {
-            "Entity\\": "application/ORM/Entity/",
-            "Repository\\": "application/ORM/Repository/",
-            "CoDevelopers\\Doctrigniter\\": "application/libraries/doctrigniter/"
+            "Entity\\": "/../../ORM/Entity",
+            "Repository\\": "/../../ORM/Repository",
+            "CoDevelopers\\Doctrigniter\\": "/"
         }
     },
     "scripts": {

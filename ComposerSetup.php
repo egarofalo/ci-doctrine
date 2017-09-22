@@ -15,7 +15,6 @@ class ComposerSetup {
     
     public static function prePackageInstall(PackageEvent $event) {
         echo self::$outputPrePackageInstall;
-        /*
         if (!file_exists(dirname(__FILE__) . '/../../ORM')) {
             mkdir(dirname(__FILE__) . '/../../ORM');
         } else {
@@ -30,8 +29,6 @@ class ComposerSetup {
         if (!file_exists(dirname(__FILE__) . '/../../ORM/Proxy')) {
             mkdir(dirname(__FILE__) . '/../../ORM/Proxy');
         }
-         * 
-         */
     }
     
     public static function postPackageInstall(PackageEvent $event) {
