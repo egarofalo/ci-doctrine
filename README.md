@@ -15,6 +15,7 @@ El archivo <code>application/libraries/doctrigniter/database.yml</code> contiene
 Dentro del yml, la clave <code>active_group</code> le indica a Doctrine que grupo de parámetros utilizar para acceder a la base de datos (<code>development</code>, <code>testing</code> o <code>production</code>).
 
 # Carga automática de la libreria
+Antes de agregar Doctrigniter a la cola de carga automática de librerías, abra el archivo <code>application/config.php</code> e indique la ruta del archivo <code>autoload.php</code> de Composer en el array <code>$config</code> de la siguiente manera: <code>$config['composer_autoload'] = 'vendor/autoload.php';</code>.
 Para cargar la librería automaticamente, abra el archivo <code>application/config/autoload.php</code> y agregue la libreria al array <code>$autoload['libraries']</code>. Recuerde, en caso de que se cargue automaticamente, desactivar la librería Database de CodeIgniter.
 
 # Creando entidades y repositorios
