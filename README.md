@@ -6,7 +6,7 @@ Doctrigniter necesita PHP >= 7.0.8 y CodeIgniter 3.x para poder ser ejecutado.
 
 # Instalación
 Instale Composer en su equipo y luego ejecute el comando <code>composer require co-developers/doctrigniter</code> dentro de la raíz de su proyecto en CodeIgniter. Luego siga los pasos de las siguientes secciones respetando el orden:
-- <strong>El archivo <code>database.yml</code><strong>
+- <strong>El archivo <code>database.yml</code></strong>
 - <strong>Carga automática de la librería</strong>
 - <strong>Creando entidades y repositorios</strong>
 
