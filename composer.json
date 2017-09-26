@@ -1,5 +1,5 @@
 {
-    "name": "co-developers/doctrigniter",
+    "name": "co-developers/ci-doctrine",
     "type": "codeigniter-library",
     "license": "MIT",
     "description": "Librería de CodeIgniter 3 para utilizar Doctrine como ORM",
@@ -26,5 +26,8 @@
             "Entity\\": "/../../ORM/Entity",
             "Repository\\": "/../../ORM/Repository"
         }
-    }  
+    },
+    "extra": {
+        "installer-name": "Doctrine"
+    }    
 }
