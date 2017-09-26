@@ -6,7 +6,7 @@ use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
 use Symfony\Component\Yaml\Yaml;
 
-class Doctrigniter {
+class Doctrine {
 
     private $metadataPaths;
     private $entityManager;
