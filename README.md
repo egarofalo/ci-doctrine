@@ -5,12 +5,14 @@ Librería de CodeIgniter 3 para utilizar Doctrine como ORM.
 CI Doctrine necesita PHP >= 7.0.8 y CodeIgniter 3.x para poder ser ejecutado.
 
 <h2>Instalación</h2>
-Instale Composer en su equipo y luego ejecute el comando <code>composer require co-developers/ci-doctrine</code> dentro de la raíz de su proyecto en CodeIgniter.
+Instale Composer en su equipo y luego ejecute el comando <code>composer require co-developers/ci-doctrine v1.0.0-alpha</code> dentro de la raíz de su proyecto en CodeIgniter.
 
 <h2>Configuración manual de la librería</h2>
+
 <h3>Copiar el archivo <code>database.yml</code></h3>
 El archivo <code>application/libraries/doctrine/database.yml</code> contiene la configuración de la conexión a la base de datos que utiliza Doctrine para acceder a la misma. Antes de comenzar a utilizar CI Doctrine debe copiar éste archivo en la carpeta <code>application/config</code>.
 Dentro del yml, la clave <code>active_group</code> le indica a Doctrine que grupo de parámetros utilizar para acceder a la base de datos (<code>development</code>, <code>testing</code> o <code>production</code>).
+
 <h3>Creando la estructura de carpetas</h3>
 Antes de comenzar a crear entidades se deben crear las siguientes carpetas:
 <ul>
@@ -20,8 +22,9 @@ Antes de comenzar a crear entidades se deben crear las siguientes carpetas:
 </ul>
 Una vez que se generaron dichas carpetas, se puede comenzar a crear las entidades y los repositorios. La clases Proxy se generan de forma automática por carga diferida (Lazy Loading).<br>
 Recuerde que antes de generar cada entidad debe especificar el <code>namespace</code> en el archivo de declaración de la clase. Lo mismo aplica para los repositorios. El <code>namespace</code> de las entidades es <code>Entity</code> y el de los repositorios es <code>Repository</code>.
+
 <h3>Copiar y configurar <code>cli-config.php</code> (Doctrine Console)</h3>
-Antes de comenzar a utilizar la consola de Doctrine, copie el archivo <code>application/libraries/doctrine/cli-config.php</code> en la raíz de su proyecto en CodeIginiter 3, o sea, al mismo nivel del controlador frontal <code>index.php</code> y de la carpeta <code>vendor</code> de Composer. Luego verifique, en el mismo archivo, que las constantes <code>BASEPATH</code> y <code>APPPATH</code> sean correctas. Una vez realizado este paso, ya puede ejecutar la consola de Doctrine desde la línea de comandos para crear entidades, crear repositorios, crear las tablas en la base de datos a partir de los metadatos, etc.
+Para poder utilizar la consola de Doctrine, copie el archivo <code>application/libraries/doctrine/cli-config.php</code> en la raíz de su proyecto en CodeIginiter 3, o sea, en el mismo directorio del controlador frontal <code>index.php</code> y de la carpeta <code>vendor</code> de Composer. Luego verifique, en el mismo archivo, que las constantes <code>BASEPATH</code> y <code>APPPATH</code> sean correctas. Una vez realizado este paso, ya puede ejecutar la consola de Doctrine desde la línea de comandos para crear entidades, crear repositorios, crear las tablas en la base de datos a partir de los metadatos, etc.
 Para ver la lista de comandos disponibles ejecute desde la shell <code>$ php vendor/bin/doctrine</code> en linux o <code>vendor\bin\doctrine</code> en Windows, desde la raíz de su proyecto en ambos casos.
 
 # Metadatos de las entidades
