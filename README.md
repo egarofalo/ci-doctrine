@@ -30,7 +30,7 @@ Antes de comenzar a crear entidades se deben crear las siguientes carpetas:
 CI Doctrine utiliza anotaciones para especificar los metadatos de las entidad, ya que es la forma recomendada actualmente por Symfony. Por lo tanto ingrese los metadatos en los archivos de las entidades a través de las anotaciones.
 
 # Utilizando Doctrine Console
-Antes de comenzar a utilizar la consola de Doctrine, copie el archivo <code>application/libraries/doctrine/cli-config.php</code> en la raíz de su proyecto en CodeIginiter 3, o sea, al mismo nivel de la carpeta <code>vendor</code> de Composer. Una vez realizado este paso, ya puede ejecutar la consola de Doctrine desde la línea de comandos para crear entidades, crear repositorios, crear las tablas en la base de datos a partir de los metadatos, etc.
+Antes de comenzar a utilizar la consola de Doctrine, copie el archivo <code>application/libraries/doctrine/cli-config.php</code> en la raíz de su proyecto en CodeIginiter 3, o sea, al mismo nivel del controlador frontal <code>index.php</code> y de la carpeta <code>vendor</code> de Composer. Luego verifique, en el mismo archivo, que las constantes <code>BASEPATH</code> y <code>APPPATH</code> sean correctas. Una vez realizado este paso, ya puede ejecutar la consola de Doctrine desde la línea de comandos para crear entidades, crear repositorios, crear las tablas en la base de datos a partir de los metadatos, etc.
 Para ver la lista de comandos disponibles ejecute desde la shell <code>$ php vendor/bin/doctrine</code> en linux o <code>vendor\bin\doctrine</code> en Windows, desde la raíz de su proyecto en ambos casos.
 
 # Utilizar la clase MY_Controller (opcional)
