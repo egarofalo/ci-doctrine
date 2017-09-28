@@ -24,7 +24,7 @@ class Doctrine_cli extends CI_Controller {
         if (!is_cli()) {
             show_404();
         }
-        $this->library = "doctrigniter";
+        $this->library = "doctrine";
         $this->prepMsgErrors = "La instalacion automatica no pudo ser finalizada debido a que";
         $this->appendMsgErrors = "Solucione los conflictos y finalice la instalacion de forma manual.{$this->nl}";
         $this->ormPath = APPPATH . "ORM";

@@ -28,6 +28,6 @@
         }
     },
     "extra": {
-        "installer-name": "Doctrine"
+        "installer-name": "doctrine"
     }    
 }
