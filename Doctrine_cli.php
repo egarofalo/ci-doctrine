@@ -223,7 +223,7 @@ class Doctrine_cli extends CI_Controller {
         }        
     }
     
-    public function create_schema($flag) {
+    public function create_schema($flag = '') {
         $output = [];
         $cmd = "orm:schema-tool:create";
         if (!empty($flag)) {
@@ -241,7 +241,7 @@ class Doctrine_cli extends CI_Controller {
         }        
     }
     
-    public function update_schema($flag) {
+    public function update_schema($flag = '') {
         $output = [];
         $cmd = "orm:schema-tool:update";
         if (!empty($flag)) {
