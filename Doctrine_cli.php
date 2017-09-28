@@ -177,5 +177,35 @@ class Doctrine_cli extends CI_Controller {
         echo "LA INSTALACION A FINALIZADO CON EXITO!!{$this->nl}";
         echo "---------------------------------------{$this->nl}";
     }
+    
+    public function generate_entities() {
+        $output = [];
+        $cmd =  "orm:generate-entities {$this->ormPath}";
+        if (preg_match('/^windows/i', php_uname()) === 1) {
+            $cmd = realpath("vendor/bin/doctrine {$cmd}");
+        } else {
+            $cmd = realpath("php vendor/bin/doctrine.php {$cmd}");
+        }
+        exec($cmd, $output);
+        foreach ($output as $out) {
+            echo $out;
+        }
+    }
+    
+    public function generate_proxies() {
+        
+    }    
+    
+    public function generate_repositories() {
+        
+    }
+    
+    public function create_schema() {
+        
+    }
+    
+    public function update_schema() {
+        
+    }    
 
 }
