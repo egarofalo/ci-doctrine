@@ -38,6 +38,9 @@ Para cargar la librería automaticamente en CodeIgniter, abra el archivo <code>a
 
 <h2>Configuración automática de la librería</h2>
 
+<h3>Activar Composer en CodeIgniter</h3>
+Abra el archivo <code>application/config.php</code> e indique la ruta del archivo <code>autoload.php</code> de Composer en el array <code>$config</code> de la siguiente manera: <code>$config['composer_autoload'] = 'vendor/autoload.php';</code>.
+
 <h3>Copiar el archivo <code>Doctrine_cli.php</code> a la carpeta <code>controllers</code></h3>
 Copie el archivo <code>application/libraries/doctrine/Doctrine_cli.php</code> a la carpeta <code>controllers</code> de CodeIgniter. Este archivo es un controlador de CodeIgniter que solo se ejecuta por CLI, y que dispone de un metodo <code>setup</code> para configurar automaticamente la librería y otros métodos sencillos para utilizar los complejos comandos de la consola de Doctrine.
 
