@@ -5,7 +5,7 @@ Librería de CodeIgniter 3 para utilizar Doctrine como ORM.
 CI Doctrine necesita PHP >= 7.0.8 y CodeIgniter 3.x para poder ser ejecutado.
 
 <h2>Instalación</h2>
-Instale Composer en su equipo y luego ejecute el comando <code>composer require co-developers/ci-doctrine v1.0.0-alpha.4</code> dentro de la raíz de su proyecto en CodeIgniter.
+Instale Composer en su equipo y luego ejecute el comando <code>composer require co-developers/ci-doctrine v2.0.0-alpha.1</code> dentro de la raíz de su proyecto en CodeIgniter.
 
 <h2>Configuración manual de la librería</h2>
 
