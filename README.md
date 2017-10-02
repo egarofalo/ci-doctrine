@@ -43,11 +43,12 @@ Abra la terminal de su sistema operativo y dentro del directorio de la raíz del
 
 <h3>Comandos de Doctrine CLI</h3>
 El controlador <code>Doctrine_cli.php</code> dispone de las siguientes acciones:
-- <code>doctrine_cli/generate_entities</code>: Genera las entidades a partir de los metadatos. Recuerde que antes de ejecutar este comando, debe generar las entidades sólo con sus atributos y metadatos en formato de anotaciones en la carpeta <code>application/ORM/Entity</code>. Los métodos <code>getters</code> y <code>setters</code> se generan automáticamente por dicho comando.
-- <code>doctrine_cli/generate_proxies</code>: Genera las clases Proxy a partir de las entidades en la carpeta <code>application/ORM/Proxy</code>.
-- <code>dontrine_cli/generate_repositories</code>: Genera los repositorios a partir de los metadatos de las entidades. Se generan en la carpeta <code>application/ORM/Repository</code>.
-- <code>doctrine_cli/create_schema</code>: Genera toda la estructura de la base de datos a partir de los metadatos de las entidades.
-- <code>doctrine_cli/update_schema</code>: Actualiza la estructura de la base de datos a partir de los metadatos de las entidades. Se recomienda usar el parámetro <code>--force</code>.
+<ul>
+<li><code>doctrine_cli/generate_entities</code>: Genera las entidades a partir de los metadatos. Recuerde que antes de ejecutar este comando, debe generar las entidades sólo con sus atributos y metadatos en formato de anotaciones en la carpeta <code>application/ORM/Entity</code>. Los métodos <code>getters</code> y <code>setters</code> se generan automáticamente por dicho comando.</li>
+<li><code>doctrine_cli/generate_proxies</code>: Genera las clases Proxy a partir de las entidades en la carpeta <code>application/ORM/Proxy</code>.</li>
+<li><code>dontrine_cli/generate_repositories</code>: Genera los repositorios a partir de los metadatos de las entidades. Se generan en la carpeta <code>application/ORM/Repository</code>.</li>
+<li><code>doctrine_cli/create_schema</code>: Genera toda la estructura de la base de datos a partir de los metadatos de las entidades.</li>
+<li><code>doctrine_cli/update_schema</code>: Actualiza la estructura de la base de datos a partir de los metadatos de las entidades. Se recomienda usar el parámetro <code>--force</code>.</li>
 
 <h2>Carga automática de la librería (recomendado)</h2>
 Para cargar la librería automaticamente, abra el archivo <code>application/config/autoload.php</code> y agregue el string <code>'doctrine'</code> al array <code>$autoload['libraries']</code>. Recuerde, en caso de que se cargue automaticamente, desactivar la librería Database de CodeIgniter.
