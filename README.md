@@ -33,6 +33,9 @@ Para ver la lista de comandos disponibles ejecute desde la shell <code>$ php ven
 <h3>Copiar el archivo <code>MY_Controller.php</code> (opcional)</h3>
 Si usted lo desea, puede utilizar la clase MY_Controller declarada en el archivo <code>application/libraries/doctrine/MY_Controller.php</code> como clase controladora base en CodeIgniter. Si extendemos todos nuestros controladores de MY_Controller tenemos disponibles la instancia al EntityManager en el atributo <code>$this->em</code> dentro de cada controlador. Para comenzar a utilizar esta extensión del controlador del core en primera instancia debemos activar la carga automática de la librería y luego debemos copiar el archivo <code>application/libraries/doctrine/MY_Controller.php</code> en la carpeta <code>application/core</code>.
 
+<h3>Carga automática de la librería</h3>
+Para cargar la librería automaticamente en CodeIgniter, abra el archivo <code>application/config/autoload.php</code> y agregue el string <code>'doctrine'</code> al array <code>$autoload['libraries']</code>. Recuerde, en caso de que se cargue automaticamente, desactivar la librería Database de CodeIgniter.
+
 <h2>Configuración automática de la librería</h2>
 
 <h3>Copiar el archivo <code>Doctrine_cli.php</code> a la carpeta <code>controllers</code></h3>
@@ -49,9 +52,10 @@ El controlador <code>Doctrine_cli.php</code> dispone de las siguientes acciones:
 <li><code>dontrine_cli/generate_repositories</code>: Genera los repositorios a partir de los metadatos de las entidades. Se generan en la carpeta <code>application/ORM/Repository</code>.</li>
 <li><code>doctrine_cli/create_schema</code>: Genera toda la estructura de la base de datos a partir de los metadatos de las entidades.</li>
 <li><code>doctrine_cli/update_schema</code>: Actualiza la estructura de la base de datos a partir de los metadatos de las entidades. Se recomienda usar el parámetro <code>--force</code>.</li>
+</ul>
 
-<h2>Carga automática de la librería (recomendado)</h2>
-Para cargar la librería automaticamente, abra el archivo <code>application/config/autoload.php</code> y agregue el string <code>'doctrine'</code> al array <code>$autoload['libraries']</code>. Recuerde, en caso de que se cargue automaticamente, desactivar la librería Database de CodeIgniter.
+<h3>Carga automática de la librería</h3>
+Una vez terminada la instalación automática abra el archivo <code>application/config/autoload.php</code> y agregue el string <code>'doctrine'</code> al array <code>$autoload['libraries']</code>. Recuerde, en caso de que se cargue automaticamente, desactivar la librería Database de CodeIgniter.
 
 <h2>Metadatos de las entidades</h2>
 CI Doctrine utiliza anotaciones para especificar los metadatos de las entidades, ya que es la forma recomendada actualmente por Symfony. Por lo tanto ingrese los metadatos en los archivos de las entidades a través de las anotaciones.
