@@ -1,7 +1,9 @@
 <?php
 
-define('BASEPATH', '');
-define('APPPATH', 'application/');
+$application_path = 'application';
+
+define('BASEPATH', rtrim(dirname(__FILE__), DIRECTORY_SEPARATOR));
+define('APPPATH', BASEPATH . DIRECTORY_SEPARATOR . $application_path . DIRECTORY_SEPARATOR);
 
 require './vendor/autoload.php';
 require APPPATH . 'libraries/doctrine/Doctrine.php';
