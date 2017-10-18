@@ -47,6 +47,7 @@ El controlador <code>Doctrine_cli.php</code> dispone de las siguientes acciones:
 <li><code>dontrine_cli/generate_repositories</code>: Genera los repositorios a partir de los metadatos de las entidades. Se generan en la carpeta <code>application/ORM/Repository</code>.</li>
 <li><code>doctrine_cli/create_schema</code>: Genera toda la estructura de la base de datos a partir de los metadatos de las entidades.</li>
 <li><code>doctrine_cli/update_schema</code>: Actualiza la estructura de la base de datos a partir de los metadatos de las entidades. Se recomienda usar el parámetro <code>--force</code>.</li>
+<li><code>doctrine_cli/convert_mapping_from_db</code>: Realiza ingenieria reversa de la base de datos. Específicamente genera los metadatos en formato de anotaciones a partir de la estructura de la base de datos. Los metadatos son especificados en las clases de las Entidades.</li>
 </ul>
 
 <h2>Metadatos de las entidades</h2>

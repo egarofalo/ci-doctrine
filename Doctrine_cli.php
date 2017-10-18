@@ -95,6 +95,21 @@ class Doctrine_cli extends CI_Controller {
         foreach ($output as $out) {
             echo $out . $this->nl;
         }        
-    }    
+    }
+    
+    public function convert_mapping_from_db() {
+        $output = [];
+        $cmd = "orm:convert-mapping --from-database annotation {$this->ormPath}/Entity";
+        if (preg_match('/^windows/i', php_uname()) === 1) {
+            $cmd = "vendor\\bin\\doctrine {$cmd}";
+        } else {
+            $cmd = "php vendor/bin/doctrine.php {$cmd}";
+        }
+        exec($cmd, $output);
+        echo $this->nl;
+        foreach ($output as $out) {
+            echo $out . $this->nl;
+        }        
+    }
 
 }
